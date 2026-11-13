@@ -1,0 +1,59 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: amd64 arm64 all
+Codename: stable
+Components: main
+Date: Fri, 13 Nov 2026 14:33:26 +0000
+Label: StellerSight
+Origin: StellerSight
+Suite: stable
+MD5Sum:
+ 4b0b44bcf3a8b5e048a0c6872534ab60              158 Release
+ 685aa7c393e6e9e39423f6016f4e7ea4             1798 main/binary-all/Packages
+ 03e2583bb71f49f0c54238d29ee5a92d             1005 main/binary-all/Packages.gz
+ 685aa7c393e6e9e39423f6016f4e7ea4             1798 main/binary-amd64/Packages
+ ae47c8df346a8b01a7fbf42fd036cec7             1005 main/binary-amd64/Packages.gz
+ 685aa7c393e6e9e39423f6016f4e7ea4             1798 main/binary-arm64/Packages
+ 65c7f91de88b98698bf043df76136939             1005 main/binary-arm64/Packages.gz
+SHA1:
+ 968e17f437390388bd74d9d8918f5a776ae27a0c              158 Release
+ fec4b93d20fcddb58eec157f4bf50b461f06ec99             1798 main/binary-all/Packages
+ 05ec6ffa979fe8ab2034a77fc4576af3db1341b0             1005 main/binary-all/Packages.gz
+ fec4b93d20fcddb58eec157f4bf50b461f06ec99             1798 main/binary-amd64/Packages
+ 0b83b5f6211c63daf2f6bc0fd6af9792790dd84e             1005 main/binary-amd64/Packages.gz
+ fec4b93d20fcddb58eec157f4bf50b461f06ec99             1798 main/binary-arm64/Packages
+ 3214cd9fa480048ca633269dbb1121f1ae365256             1005 main/binary-arm64/Packages.gz
+SHA256:
+ 37074e7049308fc5282b7a2df24c33574db20a3130c1f0259c2725d947338838              158 Release
+ 85b56df8eb797d9c03330cacac96c83f2e5f1ff8fa6a80a7592b37592cb90842             1798 main/binary-all/Packages
+ 935da056e96d7cbb90de2b7e9ebe638a5e91470df8bc35cd7da992bbd39e9ba4             1005 main/binary-all/Packages.gz
+ 85b56df8eb797d9c03330cacac96c83f2e5f1ff8fa6a80a7592b37592cb90842             1798 main/binary-amd64/Packages
+ d5f11f43e0f8cc000d8a3a4755cd9f94bcd384bb92eb7fa3b312189376a376ee             1005 main/binary-amd64/Packages.gz
+ 85b56df8eb797d9c03330cacac96c83f2e5f1ff8fa6a80a7592b37592cb90842             1798 main/binary-arm64/Packages
+ 387e1c63a2d32a694b8794abc1af35ef59688bad79c8543f3b53d8e9de75b261             1005 main/binary-arm64/Packages.gz
+SHA512:
+ 5dfe197de8490abc5e32cf3be7405f9038a6f1de1c2df3f86c32be7586c3912f13de3ab76ed535f28547dad06e2ad96be485949b3de61846601cfb7f16ec4c6d              158 Release
+ 3acfd638002681f482d490841facda879c67d0f350663b64e9817907b20cfda17007ab8f644f9d5db1872ceeea85b5685b0aa605031f32bd184afe7d6b389d42             1798 main/binary-all/Packages
+ 139755b0716334ee67030b9e0550136c9cdf2cbb35ef338dc1d926c44e539d9ecd6f851d4c4c49e80f8036ea44a28fc3ac14183085858b23e1bcd88185010066             1005 main/binary-all/Packages.gz
+ 3acfd638002681f482d490841facda879c67d0f350663b64e9817907b20cfda17007ab8f644f9d5db1872ceeea85b5685b0aa605031f32bd184afe7d6b389d42             1798 main/binary-amd64/Packages
+ 236a2c967a830c15695bed678ccca8432dc5f164bd00ecf1d407bebc4e7f6aea9461f48520077651809e6ddf7753eecccd868e5f05b11a1b951e6e3a4abc712d             1005 main/binary-amd64/Packages.gz
+ 3acfd638002681f482d490841facda879c67d0f350663b64e9817907b20cfda17007ab8f644f9d5db1872ceeea85b5685b0aa605031f32bd184afe7d6b389d42             1798 main/binary-arm64/Packages
+ 41403d28a7cdb1649fbcc1854e381181d4044d670d0bdf3abddc5ef8b1959b49553a0ce6052a8b457e3c24e5a5804f8730c67a9d7d2f703c539ffb7175e19459             1005 main/binary-arm64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQJOBAEBCgA4FiEEsD1WAHwVdY37KuTZRxZgyJDTnckFAmr3H7oaHHNlY3VyaXR5
+QHN0ZWxsZXJzaWdodC5jb20ACgkQRxZgyJDTncmU+g/6AwcJEQTJFyo/E8IwL0kT
+KuwqKIAy5ewdpvkKFCNGwTNJ5dBv+Az7kmXGgDJ4qqbXVIcELGimEXpWRyvD1Giu
+6EXgoLHCpY04BMr0rgq8qjezYbv+Kh0jTeKO5zx81V0+KZFFyJcHkLSqHCp5he2n
+oOmu6SYQK78MOQvS1zwx9dR2l/Vg1SUy5SSxf6qSlWTOjV62NaIHsU9aT5zjJ/pG
+HWef9voxowfG80j+dlTYAqRnG/fpq6GFZ49jnYMdQmT4sSCh/GhakCoxCTMZtnM1
+RO0RjW4owwcxoDfoQsfPUbxHyGu+n+hMax77lZJDF8fj6OEUSGKpU3f/Vbx9ldrz
+y1NUytjblx7p/kSg+uANFW04miDWorJV9375JkZv4u6pDnaOBsTVaxpweElei8wB
+6Zb+BbHFgM/CR89fY3q7vP9/YxMaJt4vwmuTVUIMN3ZCqYNXwmXgBJp9UHp6gZgh
+bfqziXoZHuA3a0YNPdnBlNRg5EAIIsfMyfKJQT/zLXTcK9JlQBP7v5IbXKoFNEEu
++oCNrGFM3FqMy9Q+P3hCKO/agyzgzBw8Ygm3peJYVZORP7WJq3pWwobX13MiUS04
+/+qocTX8WGg4N/X1BsWej7xODHzB0lXmdvGK2IJyoVshPms9thv475yr5Z1xGUTf
+7gUPjRfSSvP9k7mEQgmIpKc=
+=UTir
+-----END PGP SIGNATURE-----

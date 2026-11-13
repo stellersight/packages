@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StellerSight Packages</title>
+<meta name="description" content="Signed apt, dnf/yum, zypper, apk and pacman repositories for SUIT for Linux and Priv-Audit, from StellerSight Private Limited.">
+<style>
+:root { --bg:#ffffff; --fg:#14171c; --muted:#5b6370; --line:#e3e6ea; --code:#f5f6f8; --accent:#0b5cad; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1115; --fg:#e8eaee; --muted:#9aa3ae; --line:#262a31; --code:#171a20; --accent:#6aa9ec; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+main { max-width:860px; margin:0 auto; padding:40px 16px 64px; }
+h1 { font-size:1.9rem; margin:0 0 4px; }
+h2 { font-size:1.2rem; margin:36px 0 8px; padding-top:12px; border-top:1px solid var(--line); }
+p, li { color:var(--fg); }
+.muted { color:var(--muted); }
+pre { background:var(--code); border:1px solid var(--line); border-radius:6px; padding:12px 14px; overflow-x:auto; font:13.5px/1.5 ui-monospace,Consolas,monospace; }
+code { font-family:ui-monospace,Consolas,monospace; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:.95rem; }
+th, td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+</style>
+</head>
+<body>
+<main>
+<h1>StellerSight Packages</h1>
+<p class="muted">Signed Linux package repositories from StellerSight Private Limited.</p>
+
+<table>
+<tr><th>Package</th><th>What it is</th><th>Status</th></tr>
+<tr><td><a href="https://github.com/stellersight/suit-linux"><code>suit-linux</code></a></td><td>SUIT for Linux: a just-in-time broker for privileged commands, with approval, boot-bound expiry and a hash-chained audit trail.</td><td>0.2.0 beta 1, experimental</td></tr>
+<tr><td><a href="https://github.com/stellersight/priv-audit"><code>priv-audit</code></a></td><td>Read-only Linux privilege-boundary auditor: sudoers, SUID/SGID, file capabilities, permissions, cron, OpenSSH.</td><td>0.1.0, pre-release</td></tr>
+</table>
+
+<p>Every repository is signed with the StellerSight package key:</p>
+<pre>StellerSight Packages &lt;security@stellersight.com&gt;
+RSA 4096, fingerprint B03D 5600 7C15 758D FB2A  E4D9 4716 60C8 90D3 9DC9</pre>
+<p class="muted">Check the fingerprint after importing the key. Both tools need Python 3.8 or later as <code>python3</code>, so RHEL 8 and openSUSE Leap 15 (Python 3.6) are not supported.</p>
+
+<h2>Debian and Ubuntu (apt)</h2>
+<pre>curl -fsSL https://packages.stellersight.com/stellersight.gpg | sudo tee /usr/share/keyrings/stellersight.gpg &gt;/dev/null
+echo "deb [signed-by=/usr/share/keyrings/stellersight.gpg] https://packages.stellersight.com/deb stable main" | sudo tee /etc/apt/sources.list.d/stellersight.list
+sudo apt update
+sudo apt install suit-linux priv-audit</pre>
+
+<h2>RHEL, Rocky, AlmaLinux, Oracle Linux, Fedora, Amazon Linux 2023 (dnf / yum)</h2>
+<pre>sudo curl -fsSL https://packages.stellersight.com/rpm/stellersight.repo -o /etc/yum.repos.d/stellersight.repo
+sudo dnf install suit-linux priv-audit</pre>
+
+<h2>openSUSE Tumbleweed and SLES (zypper)</h2>
+<pre>sudo rpm --import https://packages.stellersight.com/stellersight.asc
+sudo zypper addrepo --gpgcheck https://packages.stellersight.com/rpm stellersight
+sudo zypper install suit-linux priv-audit</pre>
+
+<h2>Alpine Linux (apk)</h2>
+<pre>wget -qO /etc/apk/keys/stellersight.rsa.pub https://packages.stellersight.com/apk/stellersight.rsa.pub
+echo "https://packages.stellersight.com/apk" &gt;&gt; /etc/apk/repositories
+apk add suit-linux priv-audit</pre>
+
+<h2>Arch Linux (pacman)</h2>
+<pre>curl -fsSL https://packages.stellersight.com/stellersight.asc | sudo pacman-key --add -
+sudo pacman-key --lsign-key B03D56007C15758DFB2AE4D9471660C890D39DC9
+printf '[stellersight]\nSigLevel = Required\nServer = https://packages.stellersight.com/arch/$arch\n' | sudo tee -a /etc/pacman.conf
+sudo pacman -Sy suit-linux priv-audit</pre>
+
+<h2>After installing SUIT for Linux</h2>
+<p>The package installs an empty policy, so it grants nothing until you define it. Add actions to <code>/etc/suit/profiles.json</code> and users to <code>/etc/suit/eligibility.json</code> (examples in <code>/usr/share/doc/suit-linux/</code>), put requesters in <code>suit-eligible</code> and approvers in <code>suit-approvers</code>, then run <code>suit doctor</code> as root. Read the <a href="https://github.com/stellersight/suit-linux#guarantees-and-their-limits">guarantees and their limits</a> before relying on it.</p>
+
+<h2>Security</h2>
+<p>Report vulnerabilities privately to <a href="mailto:security@stellersight.com">security@stellersight.com</a>. Source, licences (Apache-2.0) and issue trackers are on <a href="https://github.com/stellersight">github.com/stellersight</a>.</p>
+
+<p class="muted">&copy; StellerSight Private Limited.</p>
+</main>
+</body>
+</html>
