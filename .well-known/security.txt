@@ -1,0 +1,26 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Contact: mailto:security@stellersight.com
+Contact: mailto:admin@stellersight.com
+Expires: 2027-11-13T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://packages.stellersight.com/.well-known/security.txt
+Policy: https://github.com/stellersight/suit-linux/blob/main/SECURITY.md
+-----BEGIN PGP SIGNATURE-----
+
+iQJOBAEBCgA4FiEEsD1WAHwVdY37KuTZRxZgyJDTnckFAmr3Lt4aHHNlY3VyaXR5
+QHN0ZWxsZXJzaWdodC5jb20ACgkQRxZgyJDTnck1Dw/7BaPltiuhVv0kuGtw4yVo
+QxvEgw333LH3GS2qHSZjhFmnVWW0qge6OQE19gGJ0RVGVKQrAoivSGJdUZktgKMB
+winQotSTyhz+WYiLHmXSlFqs54nu7oSte6mqiPafuT64OlPQtig7vrFTCKLp390J
+iAmNvqR+VshzFjBUwKRFR/SwVDoHNkZsKrBk1mKbjoDzhP8XJDrLyW9hv8Eo+Kba
+9a5y4s6HX7BJx6D6ESBI1zmIhY/2TMqjuKz9fBbKvyI5xtVTVtorp85KEJfQNg79
+P/6IYTYxdcFFfHkgTQvxdFUo/J/8YESIGR26QOMMKl7DyDEIP2U+AGP13TEX7H6Q
++3Evge1KJLc0A7emt8sTz3TCiJS1E2akdaeYzEsceTm4Onp4goSZ3YnNE82X31cH
+uyIqoNcXgHT/DtkJ82cGgHZ/6D2A7ofwn/Y1YMuFxzxVwOmi4cKrxom0aqKpR2+G
+yzYfe+CO2CDUk2H5UjGmQG85SzZqdkegSNYm1T/UEbfzjLpHmD3e6CptvwvQgC47
+2OcBrTCahbhLefe/F4HfI/+Rot8AvzxhbbdkUWnA1KLRAkkjCtTVbHZ9Jbf5aUw0
+e5sVPpqyImAQ6/NSrGdyuHXKNpkcnpMhya5kiQqbR2HoTRDQ2J7xCOm2SXabZE3w
+oiW6dDCTpZjrOGOl1sSTzl0=
+=O00r
+-----END PGP SIGNATURE-----
